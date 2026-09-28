@@ -1,0 +1,11 @@
+# These repos are edited on Windows and on macOS/Linux berths. Normalise all
+# text to LF in the repository so line endings never appear in a diff.
+* text=auto eol=lf
+
+# Transcripts and caption files are text and should normalise the same way.
+*.md   text eol=lf
+*.vtt  text eol=lf
+*.txt  text eol=lf
+*.rtf  text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf

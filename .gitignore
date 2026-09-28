@@ -1,0 +1,24 @@
+# Local configuration and anything resolved at runtime. The knowledge repo is
+# private and is never vendored into this one.
+knowledge/
+config.toml
+
+# Generated agents. Build artifacts from roster.yaml + templates/advisor.md.tmpl;
+# produced on each machine, never committed. See skill-design.md 3.2.
+.claude/agents/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+*.swp
