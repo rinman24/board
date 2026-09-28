@@ -1,0 +1,17 @@
+# board configuration — copy to ~/.config/board/config.toml and edit.
+#
+#   mkdir -p ~/.config/board && cp config.example.toml ~/.config/board/config.toml
+#
+# One meaningful key: where the private knowledge repo is cloned. That repo's root
+# holds roster.yaml, wiki/, raw/ and context/. Resolution order for the knowledge
+# path, first match wins:
+#   1. the --knowledge PATH option to scripts/generate-agents.py
+#   2. the BOARD_KNOWLEDGE environment variable
+#   3. this file ($XDG_CONFIG_HOME/board/config.toml, default ~/.config/board/config.toml)
+#   4. ./knowledge relative to the working directory
+#
+# The resolved path is baked into the generated agents, so after moving the clone,
+# re-run the generator. Nothing here is a secret.
+
+[board]
+knowledge = "~/src/board-knowledge"
